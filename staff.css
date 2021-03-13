@@ -1,0 +1,190 @@
+.header{
+    background: white;
+    width: 100%;
+    height: 30vh;
+    text-align: right;
+}
+
+.logo{
+position: absolute;
+margin-left: 30px;
+left: 0;
+}
+
+.image{
+    margin-top: 8px;
+    width: 180px;
+   
+}
+
+.logo-text{
+    width: 80%;
+    height: 30vh;
+    display: inline-block;
+    text-align: left;
+    
+    
+}
+
+.logo-text h1{
+    margin-top: 20px;
+    padding: 0;
+    color: firebrick;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    
+}
+
+.logo-text h3{
+    text-transform: uppercase;
+    padding: 0;
+    line-height: 30px;
+    color: firebrick;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+   
+}
+
+
+
+.navbar{
+   border-bottom: 1px solid yellow;
+   background-color: firebrick;
+}
+
+#brand-text{
+    color: white;
+    font-weight: bolder;
+}
+
+#links{
+    color: white;
+    
+}
+
+#links:focus{
+    color: firebrick;
+    font-weight: bolder;
+}
+
+.naavbar-nav{
+    text-align: center;
+}
+
+.navbar-toggler{
+    color: firebrick;
+    border-radius: 10px;
+    border: 1px solid firebrick;
+}
+
+.navbar-toggler:focus{
+    border-radius: none;
+  
+}
+
+.nav-link{
+    margin-left: 50px;
+
+}
+
+
+#staff1-img{
+    width: 20%;
+    display: inline-block;
+    
+}
+
+.img-fluid{
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.staff1{
+    margin-top: 20px;
+    width: 80%;
+    display: inline-block;
+    
+}
+
+.staff-header{
+    text-align: center;
+}
+
+.staff-header p{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: firebrick;
+    font-weight: bolder;
+
+}
+
+/******Footer CSS*****/
+#footer-link{
+    text-align: left;
+}
+
+#footer-info{
+    text-align: left;
+}
+
+#follow-us{
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+/*responsiveness for phone only*/
+@media screen and (max-width: 480px){
+   
+    .header{
+        display: none;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .row{
+        display: block;
+    }
+
+    .image{
+        border-radius: 5px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        width: 200px;
+    }
+
+  
+}
+
+/*responsiveness for tablet only*/
+@media screen and (min-width: 480px) and (max-width: 920px){
+   
+    .header{
+        display: none;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .img-fluid{
+        border-radius: 5px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        width: 200px;
+    }
+  
+}

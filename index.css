@@ -1,0 +1,368 @@
+.header{
+    background: white;
+    width: 100%;
+    height: 30vh;
+    text-align: right;
+}
+
+.logo{
+position: absolute;
+margin-left: 30px;
+left: 0;
+}
+
+.image{
+    margin-top: 8px;
+    width: 180px;
+   
+}
+
+.logo-text{
+    width: 80%;
+    height: 30vh;
+    display: inline-block;
+    text-align: left;
+    
+    
+}
+
+.logo-text h1{
+    margin-top: 20px;
+    
+    padding: 0;
+    color: firebrick;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    
+}
+
+.logo-text h3{
+    text-transform: uppercase;
+    padding: 0;
+    line-height: 30px;
+    color: firebrick;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+   
+}
+
+.navbar{
+   border-bottom: 1px solid yellow;
+   background-color: firebrick;
+}
+
+#brand-text{
+    color: white;
+    font-weight: bolder;
+}
+
+#links{
+    color: white;
+    
+}
+
+#links:focus{
+    color: firebrick;
+    font-weight: bolder;
+}
+
+
+
+.naavbar-nav{
+    text-align: center;
+}
+
+
+
+.navbar-toggler{
+    color: firebrick;
+    border-radius: 10px;
+    border: 1px solid firebrick;
+}
+
+.navbar-toggler:focus{
+    border-radius: none;
+  
+}
+
+.nav-link{
+    margin-left: 50px;
+
+}
+
+
+
+
+.section{
+    background: url(./image/section_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.article-container{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    opacity: 0.8;
+    width: 100%;
+    height: 100vh;
+}
+
+.carousel-caption{
+    background-color: white;
+    color: firebrick;
+    filter: opacity(0.7);
+    
+}
+
+.carousel-caption h3{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+.card{
+    border: 1px solid firebrick;
+    margin-bottom: 20px;
+}
+.card-body{
+    background-color: firebrick;
+    color: white;
+}
+
+.btn:hover{
+    background-color: white;
+    border: 1px solid yellow;
+    color: firebrick;
+}
+
+
+.col-12{
+    background-image: url(image/children\ playing.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+.footer{
+    width: 100%;
+    height: 100vh;
+    background-color: firebrick;
+    filter: opacity(0.7);
+}
+
+
+#form{
+    background: none;
+    background-size: cover;
+    -webkt-background-sizecontent: cover;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    text-align: center;
+   
+}
+
+#form h1{
+    text-align: center;
+    padding-top: 10px;
+    color: firebrick;
+    display: inline-block;
+    border-bottom: 3px solid firebrick;
+    border-bottom-width: 10px;
+    font-size: 30px;
+}
+
+.wrapper{
+    width: 30%px;
+    padding-top: 10px;
+}
+
+.form-area{
+    display: flex;
+    background: rgba(0,0,0,0.8);
+    border-radius: 5px;
+    padding: 30px;
+}
+
+.msg-area{
+    display: flex;
+    flex-direction: column;
+    order: 2;
+}
+
+.msg-area > textarea{
+    flex: 1;
+    min-width: 14em;
+    background: transparent;
+    color: white;
+    padding: 10px;
+}
+
+.details-area{
+    flex: 1;
+    order: 1;
+    margin-right: 2em;
+}
+
+.details-area input{
+    width: 100%;
+    height: 10px;
+    background: transparent;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.details-area input,
+.details-area button{
+    padding: 1em;
+    margin-bottom: 1em;
+    height: 40px;
+}
+
+.details-area button{
+    background: firebrick;
+    color: white;
+    border: 0;
+    padding: 15px 50px;
+    border-radius: 5px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 10px;
+}
+
+label{
+    color: white;
+    text-transform: uppercase;
+    line-height: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.btn-close{
+    background: transparent;
+    height: 10px;
+}
+
+.card{
+    text-align: center;
+}
+
+#mission-text{
+    font-size: 30px;
+    justify-items: center;
+}
+/******Footer CSS*****/
+#footer-link{
+    text-align: left;
+}
+
+#footer-info{
+    text-align: left;
+}
+
+#follow-us{
+    text-align: left;
+}
+
+
+/*responsiveness for phone only*/
+@media screen and (min-width: 300px) and (max-width: 480px){
+    .section{
+        background: none;
+        width: 100%;
+        height: 100vh;
+        display: block;
+    }
+
+    .article-container{
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        opacity: 0.8;
+        width: 100%;
+        height: 100vh;
+    }
+    .row{
+        display: block;
+    }
+    .header{
+        display: none;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    #row{
+        display: block;
+    }
+
+    #form{
+        background: none;
+        background-size: cover;
+        -webkt-background-sizecontent: cover;
+        background-size: cover;
+        background-position: center center;
+        height: 100vh;
+        text-align: center;
+        width: 100%;
+       
+    }
+
+    .msg-area > textarea{
+        flex: 1;
+        min-width: 7em;
+        background: transparent;
+        color: white;
+        padding: 10px;
+    }
+
+
+  
+
+   
+}
+
+/*responsiveness for tablet only*/
+@media screen and (min-width: 480px) and (max-width: 1023px){
+   
+    .header{
+        display: none;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    #row{
+        display: block;
+    }
+    #form{
+        background: none;
+        background-size: cover;
+        -webkt-background-sizecontent: cover;
+        background-size: cover;
+        background-position: center center;
+        height: 100vh;
+        text-align: center;
+       
+    }
+
+    .msg-area > textarea{
+        flex: 1;
+        min-width: 10em;
+        background: transparent;
+        color: white;
+        padding: 10px;
+    }
+
+
+   
+    
+}
