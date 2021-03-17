@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Login</title>
+    <title>sign Up</title>
     <link rel="stylesheet" href="fontawesome-free-5.15.2-web/css/all.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="register.css">
@@ -30,7 +30,7 @@
                   <a class="nav-link" href="index.html" id="links">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#" id="links">About</a>
+                  <a class="nav-link" href="about.html" id="links">About</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="staff.html" id="links">Our Staffs</a>
@@ -39,52 +39,51 @@
                   <a class="nav-link active" aria-current="page" href="student_login.html" id="links">Student Portal</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#footer" id="links" >Contact Us</a>
+                  <a class="nav-link" href="contact.html" id="links" >Contact Us</a>
                 </li>
               </ul>
             </div>
           </div>
         </nav>
 
-        <section class="form my-4 mx-5" action="" name="form1">
+        <section class="form my-4 mx-5">
             <div class="container">
-                <div class="row no-gutter
-                ">
+                <div class="row no-gutter">
                     <div class="col-lg-5">
                         <img src="image/section_background.jpg" alt="" class="img-fluid">
                     </div>
                     <div class="col-lg-7 px-5 pt-4" style="color: firebrick;">
                         <h1 class="font-weight-bold">
                           SIGN UP</h1>
-                        <form action="#index.html">
+                        <form id="form_id" action="action_page.html" method="GET" name="myform">
                           <div class="form-row">
                             <div class="col-lg-7">
-                                <input type="text" placeholder="First Name" required class="form-control my-3 p-1">
+                                <input type="text" placeholder="First Name" name="firstName" id="firstName"  class="form-control my-3 p-1">
                             </div>
                           </div>
                           <div class="form-row">
                             <div class="col-lg-7">
-                                <input type="text" placeholder="Last Name" required class="form-control my-3 p-1">
+                                <input type="text" placeholder="Last Name" name="lasttName" id="lastName" class="form-control my-3 p-1">
                             </div>
                           </div>
                             <div class="form-row">
                                 <div class="col-lg-7">
-                                    <input type="emali" placeholder="Email-Address" required class="form-control my-3 p-1">
+                                    <input type="emali" placeholder="Email-Address" name="email" id="email" class="form-control my-3 p-1">
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="col-lg-7">
-                                    <input type="password" placeholder="Enter Password" required class="form-control my-3 p-1"> 
+                                    <input type="password" placeholder="Enter Password" name="password" id="passwowrd" class="form-control my-3 p-1"> 
                                 </div>
                             </div>
                             <div class="form-row">
                               <div class="col-lg-7">
-                                  <input type="password" placeholder="Re-Enter Password" required class="form-control my-3 p-1"> 
+                                  <input type="password" placeholder="Re-Enter Password" name="password" id="password" class="form-control my-3 p-1"> 
                               </div>
                           </div>
                             <div class="form-row">
                                 <div class="col-lg-7">
-                                    <input type="submit" value="Login" class="btn1">
+                                    <input onclick="myfunction()" type="button" value="Sign Up" class="btn1">
                                 </div>
                             </div>
                             <a href="#">Forget Password?</a>
@@ -98,7 +97,40 @@
 
 
 
-    <script src="js/bootstrap.min.js"></script>
-    <script src="jquery/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js">
+     //submit form with id function
+     function myfunction(){
+      var firstName = document.getElementById("firstName").value;
+      var lastName = document.getElementById("lastName").value;
+      var email = document.getElementById("email").value;
+      var password = document.getElementById("password").value;
+      if (validation()) // calling validation function
+    {
+      document.getElementById("form_id").action = "action_page.html"//settings form action to "action_page.html"
+      document.getElementById("form_id").submit();//submitting form
+    }
+    }
+
+    //Name and email validation function
+    function validation(){
+      var firstName = document.getElementById("firstName").value;
+      var lastName = document.getElementById("lastName").value;
+      var email = document.getElementById("email").value;
+      var password = document.getElementById("password").value;
+      var emailReg = /^([w-.]+@([w-]+.)+[w-]{2,4})?$/;
+      if (firstName === '' || lastName === '' || email === '' || password === ''){
+        alert("please fill all fields...!!!!!");
+        return false;
+      
+      }else if (!(email).match(emailReg)){
+        alert("Invalid Email...!!!!!");
+        return false;
+      }else{
+        return true
+      }
+    }</script>
+    <script src="jquery/jquery-3.2.1.min.js">
+    
+    </script>
 </body>
 </html>
